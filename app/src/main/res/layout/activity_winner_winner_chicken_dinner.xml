@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".WinnerWinnerChickenDinner"
+    android:background="@drawable/winner_1"
+    >
+
+
+
+    <TextView
+        android:id="@+id/winner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:textSize="50dp"
+        android:text="Winneris"
+        >
+
+    </TextView>
+
+
+
+
+    <Button
+        android:id="@+id/Exit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@+id/winner"
+        android:text="Exit"
+        android:backgroundTint="#CFBF32"
+        android:textColor="@android:color/black"
+        >
+
+    </Button>
+    <Button
+        android:id="@+id/Play_Again"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/winner"
+        android:text="Play Again"
+        android:backgroundTint="#CFBF32"
+        android:textColor="@android:color/black"
+        >
+
+
+    </Button>
+    <Button
+        android:id="@+id/BackToOpening"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@+id/Play_Again"
+        android:layout_toRightOf="@id/Exit"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:text="Main Menu"
+        android:backgroundTint="#CFBF32"
+        android:textColor="@android:color/black"
+        >
+
+
+    </Button>
+
+</RelativeLayout>
