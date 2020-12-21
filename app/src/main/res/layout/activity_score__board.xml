@@ -4,54 +4,29 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Score_Board">
+    tools:context=".Score_Board"
+    >
+
     <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerInParent="true"
-        android:orientation="vertical"
-        android:background="@drawable/back_1"
-        android:gravity="center"
-
-
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
         >
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:text="Leaders"
-            android:textColor="@color/white"
-            android:layout_marginTop="30dp"
-            >
-        </TextView>
-        <ListView
-            android:id="@+id/score_List"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            ></ListView>
 
 
+    <FrameLayout
+        android:id="@+id/List"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:layout_margin="24dp"/>
+    <FrameLayout
+        android:id="@+id/gps_map"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:layout_margin="24dp"/>
 
     </LinearLayout>
-
-
-
-
-
-
-
-
-
-
-
-    <Button
-        android:id="@+id/Back"
-        android:layout_width="80dp"
-        android:layout_height="50dp"
-        android:text="Back"
-        android:backgroundTint="#BD1111"
-        android:textColor="@color/white"
-        >
-    </Button>
 
 </RelativeLayout>

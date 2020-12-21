@@ -6,13 +6,23 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
+<ImageView
+        android:id="@+id/main_PNG_background"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitXY">
+
+    </ImageView>
+
+
     <LinearLayout
 
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="horizontal"
-        android:background="@drawable/back_1"
+
         >
+
 
 
         <LinearLayout
@@ -37,17 +47,17 @@
                 />
 
             <ImageView
+                android:id="@+id/Player2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:src="@drawable/person_2"
                 android:layout_gravity="center"
 
                 />
 
         </LinearLayout>
 
-
-
+//android:src="@drawable/person_2"
+//android:src="@drawable/person_1"
         <LinearLayout
             android:id="@+id/main_Lay_center"
             android:orientation="vertical"
@@ -87,7 +97,6 @@
 
                 <ImageView
                     android:id="@+id/Right_Card"
-
                     android:layout_width="120dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
@@ -130,9 +139,9 @@
                 />
 
             <ImageView
+                android:id="@+id/Player1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:src="@drawable/person_1"
                 android:layout_gravity="center"
 
                 />

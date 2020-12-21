@@ -31,18 +31,18 @@ public class Logics {
                 }else{
                     this.cards[0][i-1].setValue(i%13);
                 }
-                this.cards[0][i-1].setImg("poker_"+(i+1));
+                this.cards[0][i-1].setImg("poker_"+(i+1)+"_");
 
             }else {
                 if(i==26)
-                    this.cards[1][(i-1) % 26].setImg("poker_"+(27));//for some reason only"poker_27" can be read
+                    this.cards[1][(i-1) % 26].setImg("poker_"+(27)+"_");//for some reason only"poker_27" can be read
 
                 if(i%13==0){
                     this.cards[1][(i-1) % 26].setValue(13);
                 }else{
                     this.cards[1][(i-1) % 26].setValue(i%13);
                 }
-                this.cards[1][(i-1) % 26].setImg("poker_"+(i+1));
+                this.cards[1][(i-1) % 26].setImg("poker_"+(i+1)+"_");
             }
 
 
